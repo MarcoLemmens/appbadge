@@ -1,0 +1,189 @@
+body, html {
+    padding: 50px;
+}
+
+.appBadgeWrapper {
+    width: 500px;
+    background-color: #F7F7F7;
+    border-radius: 5px;
+    color: darkslategray;
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding-bottom: 15px;
+    position: relative;
+
+}
+
+.appBadgeIcon {
+    border-radius: 25%;
+    width: 30%;
+    max-width: 150px;
+    margin: 15px;
+    float: left;
+}
+
+.appBadgeInfo {
+    text-align: left;
+    float: left;
+    margin-top: 25px;
+    width: 60%;
+}
+
+.appBadgeTitle {
+    font-size: 1.5em;
+}
+
+.appBadgeAuthor {
+    font-size: 0.8em;
+}
+
+.appBadgePrice {
+    background-color: deepskyblue;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    border-radius: 10px;
+    color: white;
+    font-family: 'Lato', sans-serif;
+}
+
+.appBadgeLink {
+    text-decoration: none;
+}
+
+.appBadgeWrapper hr {
+    border: 0;
+    height: 1px;
+    background-image: -webkit-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+    background-image: -moz-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+    background-image: -ms-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+    background-image: -o-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.clearer {
+    clear: both;
+}
+
+.appBadgeAdvancedColumn1 {
+    width: calc(50% - 10px);
+    float: left;
+    padding-left: 15px;
+
+}
+
+.appBadgeAdvancedColumn2 {
+    width: calc(25% - 10px);
+    float: left;
+}
+
+.appBadgeAdvancedColumn3 {
+    width: calc(25% - 10px);
+    float: left;
+    padding-right: 15px;
+}
+
+.appBadgeScreenshots {
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    opacity: 0;
+}
+
+.closeBut {
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    z-index: 11;
+    background-color: #F7F7F7;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    border-radius: 10px;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Chrome/Safari/Opera */
+    -khtml-user-select: none; /* Konqueror */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently */
+    cursor: pointer;
+
+}
+
+.iPhoneScreenshots {
+    width: auto;
+    height: 100%;
+    background-color: #F7F7F7;
+    border-radius: 5px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+
+.iPhoneScreenshots img {
+    max-height: 100%;
+    vertical-align: middle;
+}
+
+.iPhoneScreenshots img:not(:last-child) {
+    margin-right: 10px;
+}
+
+@import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
+
+fieldset, label {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 20px;
+}
+
+h1 {
+    font-size: 1.5em;
+    margin: 10px;
+}
+
+/****** Style Star Rating Widget *****/
+
+.rating {
+    border: none;
+    float: left;
+    margin-left: -5px;
+}
+
+.rating > input {
+    display: none;
+}
+
+.rating > label:before {
+    margin: 5px;
+    font-size: 1.25em;
+    font-family: FontAwesome;
+    display: inline-block;
+    content: "\f005";
+}
+
+.rating > .half:before {
+    content: "\f089";
+    position: absolute;
+}
+
+.rating > label {
+    color: #ddd;
+    float: right;
+}
+
+/***** CSS Magic to Highlight Stars on Hover *****/
+
+.rating > input:checked ~ label /* show gold star when clicked */
+{
+    color: #FFD700;
+}
+
+/* hover previous stars in list */
